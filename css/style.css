@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content_grid_body {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 76px 1fr 85px;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+    padding: 20px 120px 22px 120px;
+    position: fixed;
+    top: 0;
+}
+
+.flexContainer_navLinks {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.socialIcons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.link_imageNav {
+    width: 83px;
+    display: block;
+}
+
+.imageNav {
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #484848;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.main_grid_home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    grid-template-areas:
+    'titulo titulo imagen imagen'
+    'parrafo parrafo imagen imagen';
+}
+.main_grid_home_title{
+    grid-area: titulo;
+    align-self: end;
+    padding-bottom: 20px;
+}
+
+.main_grid_home_paragraph {
+    grid-area: parrafo;
+    align-self: start;
+    padding-top: 20px;
+}
+
+.main_grid_home_img {
+    grid-area: imagen;
+}
+
+.imageHome {
+    width: 560px;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    color: #4A4A4A;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.titlePages {
+    margin: 70px 0px 60px 0px;
+}
+
+.paragraphHome {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 128%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.actionButton {
+    background-color: #F5F5F5;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    min-width: 115px;
+    height: 31px;
+    padding: 0 10px;
+    display: block;
+    margin: 75px auto 75px auto;
+}
+
+.containerBio {
+    display: block;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.paragraphBio {
+    color: #757575;
+    font-size: 16px;
+    font-weight:400;
+    line-height: 170%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seccionEstudiosBio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+.cajaEstudioBio{
+    display:block;
+}
+
+.cajaEstudioBio img{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+}
+
+.tituloEstudio {
+    color: #525252;
+    font-size: 16px;
+    font-weight:500;
+    text-align: center;
+    line-height: 11.5px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.institucionEstudio {
+    color: #525252;
+    font-size: 12px;
+    font-weight:400;
+    text-align: center;
+}
+
+.container_page_habilidades{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imageHabilidades{
+    width: 44px;
+    height: 44px;
+    display:block;
+}
+
+.paragraphHabilidades{
+    color: #525252;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.containerHabilidades{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: start;
+    align-items: start;
+    width: 100%;
+    grid-template-areas:
+    'column1 column2 column3';
+}
+
+.flex_habilidades_items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.containerHerramientas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.cajaHerramientas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imageHerramienta{
+    width: 38px;
+    height: auto;
+    display: block;
+}
+
+.nombreHerramienta{
+    color: #525252;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #4A4A4A;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.containerTrabajos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 100px;
+}
+
+.cajaTrabajo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1150px;
+}
+
+.containerImageTrabajo {
+    width: 364px;
+}
+
+.imageTrabajos {
+    width: 364px;
+    height: 256px;
+    display: block;
+}
+
+h3{
+    color: #525252;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.containerParagraphTrabajos {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.paragraphTrabajos {
+    color: #4A4A4A;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 128%
+}
+
+.containerButtonTrabajos {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 46px;
+    
+}
+
+.containerButtonTrabajos button {
+    display: inline;
+    margin: 0;
+}
+
+.flex_form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+}
+
+.textFieldName{
+    width: 600px;
+    height: 40px;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.textFieldMessage{
+    width: 600px;
+    height: 245px;
+    border-radius: 7px;
+    display: block;
+}
+
+label {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #C3C3C3;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    padding: 27px 120px 25px 120px;
+    gap: 110px;
+    grid-area: footer;
+}
+
+.titleFooter{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.subtitleFooter {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
