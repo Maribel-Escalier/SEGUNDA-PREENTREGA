@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
 
 * {
     margin: 0;
@@ -35,6 +35,7 @@ nav {
     padding: 20px 120px 22px 120px;
     position: fixed;
     top: 0;
+    border-bottom: 1px solid rgb(255 255 255 / 30%);
 }
 
 .flexContainer_navLinks {
@@ -72,6 +73,14 @@ header {
 
 main {
     grid-area: main;
+}
+
+.background_white{
+    background-color: #ffffff;
+}
+
+.font_color_black {
+    color: #000000;
 }
 
 .main_grid_home {
@@ -120,10 +129,11 @@ h1 {
 
 .paragraphHome {
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 128%;
     margin-bottom: 60px;
     text-align: center;
+    padding: 0 15%;
 }
 
 .actionButton {
@@ -195,12 +205,7 @@ h1 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.imageHabilidades{
-    width: 44px;
-    height: 44px;
-    display:block;
+    color: #000000;
 }
 
 .paragraphHabilidades{
@@ -212,22 +217,19 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    justify-items: start;
+    justify-items: center;
     align-items: start;
     width: 100%;
     grid-template-areas:
     'column1 column2 column3';
+    gap: 35px;
 }
 
-.flex_habilidades_items{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    margin-bottom: 15px;
+.habilidades_items{
+    border-radius: 30px;
+    background-color: #000000;
+    padding: 15px 30px;
+    color: #ffffff;
 }
 
 .containerHerramientas{
@@ -257,7 +259,7 @@ h1 {
 
 .nombreHerramienta{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
     margin-top: 10px;
 }
@@ -369,14 +371,20 @@ footer {
     padding: 27px 120px 25px 120px;
     gap: 110px;
     grid-area: footer;
+    background-color: #161B22;
+    color: #7d8590;
+}
+
+.footerBorderTop {
+    border-top: 1px solid rgba(0,0,0,0.2);
 }
 
 .titleFooter{
-    font-size: 14px;
-    font-weight: 100;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .subtitleFooter {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
