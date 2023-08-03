@@ -138,18 +138,9 @@ h1 {
 }
 
 .actionButton {
-    background-color: #F5F5F5;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-align: center;
-    min-width: 115px;
-    height: 31px;
-    padding: 0 10px;
     display: block;
     margin: 75px auto 75px auto;
+    width: fit-content;
 }
 
 .containerBio {
@@ -342,7 +333,7 @@ h3{
     align-items: center;
 }
 
-.textFieldName{
+.textFieldName {
     width: 600px;
     height: 40px;
     border-radius: 7px;
@@ -350,7 +341,7 @@ h3{
     display: block;
 }
 
-.textFieldMessage{
+.textFieldMessage {
     width: 600px;
     height: 245px;
     border-radius: 7px;
@@ -380,12 +371,14 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.2);
 }
 
-.titleFooter{
+.titleFooter {
     font-size: 12px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .subtitleFooter {
     font-size: 12px;
     font-weight: 400;
+    margin-bottom: 0;
 }
