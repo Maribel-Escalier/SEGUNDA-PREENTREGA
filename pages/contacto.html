@@ -33,17 +33,17 @@
         <h1 class="titlePages">¡Hablemos! :)</h1>
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="flex_form">
-                <div>
-                    <label for="nombre-empresa">Nombre/Empresa</label>
-                    <input type="text" name="nombre-empresa" class="textFieldName">
+                <div class="form-floating">
+                    <input type="email" class="form-control form_imput" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Nombre/Empresa</label>
                 </div>
-                <div>
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" name="email"  class="textFieldName">
+                <div class="form-floating">
+                    <input type="password" class="form-control form_imput" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Correo Electrónico</label>
                 </div>
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" cols="30" rows="10" class="textFieldMessage"></textarea>
+                <div class="form-floating">
+                    <textarea class="form-control form_textarea" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Mensaje</label>
                 </div>
                 <div>
                     <button class="actionButton btn btn-outline-dark btn-lg" type="submit">Enviar</button>

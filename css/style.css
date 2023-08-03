@@ -37,6 +37,7 @@ nav {
     position: fixed;
     top: 0;
     border-bottom: 1px solid rgb(255 255 255 / 30%);
+    z-index: 999;
 }
 
 .flexContainer_navLinks {
@@ -119,7 +120,7 @@ main {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
     text-align: center;
 }
@@ -203,6 +204,7 @@ h1 {
 .paragraphHabilidades{
     font-size: 20px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .containerHabilidades{
@@ -257,7 +259,7 @@ h1 {
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
     text-align: center;
     margin-top: 100px;
@@ -331,27 +333,16 @@ h3{
     flex-wrap: nowrap;
     width: 100%;
     align-items: center;
+    gap: 20px;
 }
 
-.textFieldName {
-    width: 600px;
-    height: 40px;
-    border-radius: 7px;
-    margin-bottom: 50px;
-    display: block;
+.form_imput {
+width: 600px;
 }
 
-.textFieldMessage {
-    width: 600px;
-    height: 245px;
-    border-radius: 7px;
-    display: block;
-}
-
-label {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 5px;
+.form_textarea {
+width: 600px;
+height: 200px !important;
 }
 
 footer {
