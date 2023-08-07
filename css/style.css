@@ -37,6 +37,7 @@ nav {
     position: fixed;
     top: 0;
     border-bottom: 1px solid rgb(255 255 255 / 30%);
+    z-index: 999;
 }
 
 .flexContainer_navLinks {
@@ -119,7 +120,7 @@ main {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
     text-align: center;
 }
@@ -138,18 +139,9 @@ h1 {
 }
 
 .actionButton {
-    background-color: #F5F5F5;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-align: center;
-    min-width: 115px;
-    height: 31px;
-    padding: 0 10px;
     display: block;
     margin: 75px auto 75px auto;
+    width: fit-content;
 }
 
 .containerBio {
@@ -209,9 +201,10 @@ h1 {
     color: #000000;
 }
 
-.paragraphHabilidades{
+.paragraphHabilidades {
     font-size: 20px;
-    font-weight: 400;
+    margin-bottom: 0;
+    cursor: default;
 }
 
 .containerHabilidades{
@@ -229,8 +222,18 @@ h1 {
 .habilidades_items{
     border-radius: 30px;
     background-color: #000000;
-    padding: 15px 30px;
     color: #ffffff;
+    padding: 15px 30px;
+    border: 3px solid transparent;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.habilidades_items:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #000000;
+    transition: 0.3s;
 }
 
 .containerHerramientas{
@@ -266,7 +269,7 @@ h1 {
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
     text-align: center;
     margin-top: 100px;
@@ -277,7 +280,12 @@ h2 {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
+}
+
+hr.solid {
+    border-top: 2px solid #ffffff;
+    width: 1150px;
 }
 
 .cajaTrabajo {
@@ -288,20 +296,33 @@ h2 {
     width: 1150px;
 }
 
+.cajaTrabajo:hover .containerImageTrabajo {
+    width: 460px;
+    height: 260px;
+    transition: 0.3s;
+}
+
+.cajaTrabajo:hover .containerParagraphTrabajos {
+    width: 660px;
+    transition: 0.3s;
+}
+
 .containerImageTrabajo {
-    width: 364px;
+    width: 420px;
+    height: 220px;
+    transition: 0.3s;
 }
 
 .imageTrabajos {
-    width: 364px;
-    height: 256px;
+    width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
 }
 
 h3{
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 25px;
 }
 
 .containerParagraphTrabajos {
@@ -310,6 +331,7 @@ h3{
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
+    transition: 0.3s;
 }
 
 .paragraphTrabajos {
@@ -340,27 +362,16 @@ h3{
     flex-wrap: nowrap;
     width: 100%;
     align-items: center;
+    gap: 20px;
 }
 
-.textFieldName{
-    width: 600px;
-    height: 40px;
-    border-radius: 7px;
-    margin-bottom: 50px;
-    display: block;
+.form_imput {
+width: 600px;
 }
 
-.textFieldMessage{
-    width: 600px;
-    height: 245px;
-    border-radius: 7px;
-    display: block;
-}
-
-label {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 5px;
+.form_textarea {
+width: 600px;
+height: 200px !important;
 }
 
 footer {
@@ -380,12 +391,14 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.2);
 }
 
-.titleFooter{
+.titleFooter {
     font-size: 12px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .subtitleFooter {
     font-size: 12px;
     font-weight: 400;
+    margin-bottom: 0;
 }
