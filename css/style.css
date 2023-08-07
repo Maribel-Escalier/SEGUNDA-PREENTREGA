@@ -201,10 +201,10 @@ h1 {
     color: #000000;
 }
 
-.paragraphHabilidades{
+.paragraphHabilidades {
     font-size: 20px;
-    font-weight: 400;
     margin-bottom: 0;
+    cursor: default;
 }
 
 .containerHabilidades{
@@ -222,8 +222,18 @@ h1 {
 .habilidades_items{
     border-radius: 30px;
     background-color: #000000;
-    padding: 15px 30px;
     color: #ffffff;
+    padding: 15px 30px;
+    border: 3px solid transparent;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.habilidades_items:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #000000;
+    transition: 0.3s;
 }
 
 .containerHerramientas{
@@ -270,7 +280,12 @@ h2 {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
+}
+
+hr.solid {
+    border-top: 2px solid #ffffff;
+    width: 1150px;
 }
 
 .cajaTrabajo {
@@ -281,14 +296,28 @@ h2 {
     width: 1150px;
 }
 
+.cajaTrabajo:hover .containerImageTrabajo {
+    width: 460px;
+    height: 260px;
+    transition: 0.3s;
+}
+
+.cajaTrabajo:hover .containerParagraphTrabajos {
+    width: 660px;
+    transition: 0.3s;
+}
+
 .containerImageTrabajo {
-    width: 364px;
+    width: 420px;
+    height: 220px;
+    transition: 0.3s;
 }
 
 .imageTrabajos {
-    width: 364px;
-    height: 256px;
+    width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
 }
 
 h3{
@@ -302,6 +331,7 @@ h3{
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
+    transition: 0.3s;
 }
 
 .paragraphTrabajos {
