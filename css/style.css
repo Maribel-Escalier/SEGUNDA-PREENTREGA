@@ -13,6 +13,10 @@ body {
     
 }
 
+nav {
+    min-height: 76px;
+}
+
 .content_grid_body {
     display:grid;
     grid-template-columns: 1fr;
@@ -25,42 +29,15 @@ body {
     'footer';
 }
 
-nav {
-    background-color: #000000;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 20px 120px 22px 120px;
-    position: fixed;
-    top: 0;
-    border-bottom: 1px solid rgb(255 255 255 / 30%);
-    z-index: 999;
-}
-
-.flexContainer_navLinks {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
-
 .socialIcons{
     display: flex;
     align-items: center;
     gap: 15px;
-
-}
-
-.link_imageNav {
-    width: 83px;
-    display: block;
 }
 
 .imageNav {
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: auto;
     display: block;
 }
 
@@ -82,7 +59,7 @@ main {
 }
 
 .font_color_black {
-    color: #000000;
+    color: #212529;
 }
 
 .main_grid_home {
@@ -198,7 +175,6 @@ h1 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    color: #000000;
 }
 
 .paragraphHabilidades {
@@ -221,7 +197,7 @@ h1 {
 
 .habilidades_items{
     border-radius: 30px;
-    background-color: #000000;
+    background-color: #212529;
     color: #ffffff;
     padding: 15px 30px;
     border: 3px solid transparent;
@@ -231,8 +207,8 @@ h1 {
 
 .habilidades_items:hover {
     background-color: #ffffff;
-    color: #000000;
-    border: 3px solid #000000;
+    color: #212529;
+    border: 3px solid #212529;
     transition: 0.3s;
 }
 
@@ -401,4 +377,60 @@ footer {
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .main_grid_home {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 0.5fr);
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        'titulo'
+        'imagen'
+        'imagen'
+        'parrafo';
+    }
+
+    .main_grid_home_title {
+    align-self: auto;
+    }
+
+    nav {
+        padding: 20px 20px 22px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .paragraphHome {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 128%;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .imageHome {
+        width: 100%;
+    }
+
+}
+
+
+/*Header y Footer*/
+@media screen and (max-width: 992px) {
+    .content_grid_body {
+        grid-template-rows: 76px 1fr auto;
+    }
+
+    footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 27px 20px 25px 20px;
+        gap: 40px;
+    }
 }
