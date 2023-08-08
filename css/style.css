@@ -100,6 +100,9 @@ h1 {
     font-size: 50px;
     font-weight: 500;
     text-align: center;
+}
+
+.title_home {
     padding: 40px 0 0;
 }
 
@@ -125,6 +128,7 @@ h1 {
 .containerBio {
     display: block;
     max-width: 750px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -144,6 +148,7 @@ h1 {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 60px;
+    gap: 40px;
 }
 
 .cajaEstudioBio{
@@ -151,8 +156,8 @@ h1 {
 }
 
 .cajaEstudioBio img{
-    width: 70px;
-    height: 70px;
+    width: auto;
+    height: 50px;
     margin: 0 auto;
     display: block;
 }
@@ -360,7 +365,7 @@ footer {
     padding: 27px 120px 25px 120px;
     gap: 110px;
     grid-area: footer;
-    background-color: #161B22;
+    background-color: #212529;
     color: #7d8590;
 }
 
@@ -406,6 +411,15 @@ footer {
         grid-template-rows: 76px 1fr auto;
     }
 
+    .paragraphBio {
+        padding: 0 40px;
+    }
+
+    .seccionEstudiosBio {
+        justify-content: space-around;
+    }
+    
+
     footer {
         flex-direction: column;
         flex-wrap: wrap;
@@ -417,6 +431,9 @@ footer {
 @media screen and (max-width: 576px) {
     h1 {
         font-size: 26px;
+    }
+
+    .title_home {
         padding: 20px 20px 0;
     }
 
@@ -433,7 +450,12 @@ footer {
     }
 
     .actionButton {
-        margin: 25px auto 25px auto;
+        margin: 30px auto 45px auto;
+    }
+
+    .seccionEstudiosBio {
+        flex-direction: column;
+        align-items: center;
     }
 
     footer {
