@@ -263,6 +263,7 @@ h2 {
     flex-wrap: nowrap;
     align-items: center;
     gap: 80px;
+    width: 100%;
 }
 
 hr.solid {
@@ -289,6 +290,11 @@ hr.solid {
     transition: 0.3s;
 }
 
+h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+
 .containerImageTrabajo {
     width: 420px;
     height: 220px;
@@ -300,11 +306,6 @@ hr.solid {
     height: 100%;
     display: block;
     object-fit: cover;
-}
-
-h3{
-    font-size: 24px;
-    font-weight: 400;
 }
 
 .containerParagraphTrabajos {
@@ -415,6 +416,41 @@ footer {
         justify-content: space-around;
         padding: 0 30px;
     }
+
+    .cajaTrabajo {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .containerImageTrabajo {
+        width: 35%;
+        height: auto;
+        transition: 0.3s;
+    }
+
+    .containerParagraphTrabajos {
+        width: 55%;
+        transition: 0.3s;
+    }
+
+    hr.solid {
+        width: 90%;
+    }
+
+    .cajaTrabajo:hover .containerImageTrabajo {
+        width: 45%;
+        height: auto;
+        transition: 0.3s;
+    }
+    
+    .cajaTrabajo:hover .containerParagraphTrabajos {
+        width: 45%;
+        transition: 0.3s;
+    }
+
+    .imageTrabajos {
+        object-fit: contain;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -466,6 +502,50 @@ footer {
 
     .flex_form {
         padding: 0 25px;
+    }
+
+    .cajaTrabajo {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .containerImageTrabajo {
+        width: 80%;
+        height: auto;
+        transition: 0.3s;
+    }
+
+    .containerParagraphTrabajos {
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .containerParagraphTrabajos h3 {
+        text-align: center;
+    }
+
+    .paragraphTrabajos {
+        text-align: center;
+    }
+
+    hr.solid {
+        width: 90%;
+    }
+
+    .cajaTrabajo:hover .containerImageTrabajo {
+        width: 95%;
+        height: auto;
+        transition: 0.3s;
+    }
+    
+    .cajaTrabajo:hover .containerParagraphTrabajos {
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .imageTrabajos {
+        object-fit: contain;
     }
 
 }
