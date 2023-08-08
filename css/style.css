@@ -580,6 +580,10 @@ footer {
         align-items: center;
     }
 
+    .cajaTrabajo {
+        margin-bottom: 30px;
+    }
+
     footer {
         gap: 20px;
     }
