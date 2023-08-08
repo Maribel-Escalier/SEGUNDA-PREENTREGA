@@ -347,7 +347,7 @@ h3{
     gap: 20px;
 }
 
-.form_imput {
+.form_input {
 width: 600px;
 }
 
@@ -452,11 +452,27 @@ footer {
         'column1';
     }
 
+    .form_input {
+        width: 100%;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+        
+    .form_textarea {
+    width: 100%;
+    }
+
+    .flex_form {
+        padding: 0 25px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
     h1 {
-        font-size: 26px;
+        font-size: 36px;
     }
 
     .title_home {
