@@ -9,8 +9,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     color:#ffffff;
-    background-image: url('../images/background_darkness.webp')
-    
+}
+
+.bg_dark {
+    background-image: url('../images/background_dark.webp')
+}
+
+.bg_light {
+    background-image: url('../images/background_light.jpg')
 }
 
 nav {
